@@ -1,0 +1,14 @@
+button {
+  color: white;
+  background-color: rgb(86, 0, 86);
+  border: none;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 15%;
+}
+
+button:hover {
+  background-color: purple;
+}
