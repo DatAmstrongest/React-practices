@@ -1,6 +1,7 @@
 import UserForm from "./components/UserForm";
 import UsersList from "./components/Users/UsersList";
 import ErrorModal from "./components/Modal/ErrorModal";
+import Wrapper from "./helpers/Wrapper";
 import { useState } from "react";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     });
   };
   return (
-    <div>
+    <Wrapper>
       <UserForm
         data={data}
         addUser={addUser}
@@ -42,7 +43,7 @@ function App() {
           text="Please enter a valid name and age (non-empty values)"
         />
       ) : null}
-    </div>
+    </Wrapper>
   );
 }
 
